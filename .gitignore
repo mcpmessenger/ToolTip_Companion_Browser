@@ -1,0 +1,71 @@
+# Build Output
+out/
+gen/
+obj/
+*.obj
+*.exe
+*.dll
+*.pdb
+*.lib
+*.so
+*.dylib
+*.a
+*.o
+
+# Build artifacts
+*.ninja
+*.ninja_log
+*.ninja_deps
+build.ninja
+build.ninja.d
+build.ninja.stamp
+
+# Visual Studio files
+*.vcxproj
+*.vcxproj.filters
+*.sln
+*.suo
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*.scc
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+*.log.*
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Large binary files
+*.bin
+*.dat
+*.db
+*.sqlite
+*.sqlite3
+
+# Test files
+*.test
+*.tests
+
+# Generated files
+*.generated.*
+*_generated.*
+*_autogen.*

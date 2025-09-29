@@ -1,0 +1,21 @@
+# Copyright 2024 The Chromium Authors
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+import("//build/config/features.gni")
+
+# Tooltip views components
+source_set("tooltip_views") {
+  sources = [
+    "tooltip_view.cc",
+    "tooltip_view.h",
+  ]
+
+  deps = [
+    "//base",
+    "//chrome/browser/tooltip:tooltip",
+    "//ui/base",
+    "//ui/gfx",
+    "//ui/views",
+  ]
+}
