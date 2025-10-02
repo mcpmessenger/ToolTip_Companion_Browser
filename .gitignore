@@ -1,0 +1,79 @@
+# Build Output
+out/
+gen/
+obj/
+*.obj
+*.lib
+*.pdb
+*.exe
+*.dll
+
+# Build artifacts
+.ninja_log
+build.ninja
+build.ninja.d
+build.ninja.stamp
+toolchain.ninja
+
+# Large binary files
+*.zip
+*.tar.gz
+*.7z
+*.rar
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Test outputs
+test_results/
+coverage/
+
+# Documentation build
+docs/_build/
+site/
+
+# Node modules (if any)
+node_modules/
+
+# Package files
+*.deb
+*.rpm
+*.msi
+*.dmg
+
+# Large directories and embedded repos
+ScreenshotTooltipLibrary/
+depot_tools/
+src/
+out/
+gen/
+obj/

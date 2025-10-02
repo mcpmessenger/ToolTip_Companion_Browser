@@ -1,0 +1,42 @@
+# Copyright 2024 The Chromium Authors
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+import("//build/config/features.gni")
+
+# Tooltip service and components
+source_set("tooltip") {
+  sources = [
+    "tooltip_service.cc",
+    "tooltip_service.h",
+    "tooltip_prefs.cc",
+    "tooltip_prefs.h",
+    "element_detector.cc",
+    "element_detector.h",
+    "screenshot_capture.cc",
+    "screenshot_capture.h",
+    "ai_integration.h",
+    "tooltip_browser_integration.cc",
+    "tooltip_browser_integration.h",
+    "dark_mode_manager.cc",
+    "dark_mode_manager.h",
+    "navigrab_integration.cc",
+    "navigrab_integration.h",
+  ]
+
+  deps = [
+    "//base",
+    "//chrome/browser/profiles",
+    "//chrome/common",
+    "//components/prefs",
+    "//content/public/browser",
+    "//net",
+    "//ui/base",
+    "//ui/gfx",
+    "//ui/snapshot",
+    "//ui/views",
+    "//src/navigrab:navigrab_core",
+  ]
+
+  # Note: tooltip_views is a separate target to avoid circular dependencies
+}
