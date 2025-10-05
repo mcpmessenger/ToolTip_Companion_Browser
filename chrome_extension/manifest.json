@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Tooltip Companion - Spider Crawl",
+  "version": "0.1.0",
+  "description": "Minimal spider action to start a crawl with animated icon; options page to store OpenAI API key.",
+  "action": {
+    "default_title": "Start crawl"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}
+
+
