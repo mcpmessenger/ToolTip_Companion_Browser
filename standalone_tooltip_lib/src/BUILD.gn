@@ -1,0 +1,20 @@
+# NaviGrab Core Library
+source_set("navigrab_core") {
+  sources = [
+    "navigrab_core.cpp",
+    "navigrab_core.h",
+    "proactive_scraper.cpp",
+    "proactive_scraper.h",
+  ]
+
+  deps = [
+    "//base",
+    "//net",
+    "//url",
+  ]
+
+  public_deps = [
+    "//third_party/jsoncpp",
+  ]
+}
+
